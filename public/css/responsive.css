@@ -1,0 +1,103 @@
+/* XL Device :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+
+}
+
+/* LG Device :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+.promo-content h1 {
+	font-size: 68px;
+}
+.feature-hover-effect {
+	padding: 9px 42px 12px 20px;
+}
+.feature-hover-effect a {
+	padding: 2px 12px;
+}
+.cta-area span {
+	margin-right: 13px;
+}
+.cta-area span:first-child input {
+	padding-right: 44px;
+}
+.cta-area input[type="text"] {
+	padding: 8px 3px 8px 14px;
+}
+.cta-area input[type="submit"] {
+	padding: 8px 48px;
+}
+	
+}
+
+
+/* MD Device :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+.promo-content h1 {
+	font-size: 54px;
+	line-height: 78px;
+}
+.promo-links {
+	padding: 15px 10px;
+}
+.about-area,.feature-area,.cta-area,.destination-area,.offers-area,.service-area,.blog-area,.contact-area {
+	padding: 40px 0px;
+}
+.about-content span {
+	line-height: 56px;
+}
+.section-title {
+	margin-bottom: 46px;
+}
+.feature-hover-effect {
+	padding: 12px 81px 12px 20px;
+}
+.cta-area span:first-child input {
+	padding-right: 130px;
+}
+.cta-area input[type="text"] {
+	padding: 8px 130px 8px 20px;
+	margin-bottom: 20px;
+}
+.single-service {
+	margin-top: 43px;
+}
+.blog-img img {
+	min-height: 218px;
+}
+.footer-col {
+	margin-bottom: 30px;
+	padding-right: 30px;
+}
+
+}
+
+
+/* Extra small Device. */
+@media only screen and (min-width: 320px) and (max-width: 767px){
+	body{
+	background-color:#ddd;
+}
+.promo-content h1 {
+	font-size: 34px;
+	line-height: 50px;
+}
+.footer-col {
+	margin-bottom: 30px;
+}
+.footer-logo {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.footer-manu {
+	text-align: center;
+}
+.footer-manu li a {
+	padding: 6px 10px;
+}
+}
+
+/* SM Small Device :550px. */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+}
