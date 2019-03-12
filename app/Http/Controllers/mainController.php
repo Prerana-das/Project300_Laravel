@@ -8,11 +8,11 @@ class mainController extends Controller
 {
     public function index()
     {
-    	return view('index');
+    	return view('user/index');
     }
 
     public function index2()
     {
-    	return view('index');
+    	return view('user/index');
     }
 }

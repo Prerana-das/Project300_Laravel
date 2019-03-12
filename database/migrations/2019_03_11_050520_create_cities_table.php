@@ -14,7 +14,13 @@ class CreateCitiesTable extends Migration
     public function up()
     {
         Schema::create('cities', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->bigIncrements('cityID');
+            $table->unsignedBigInteger('countryID')->index();
+            $table->foreign('countryID')->references('countryID')->on('countries')->onDelete('cascade')->onUpdate('No Action');
+            $table->unsignedBigInteger('userID')->index()->nullable();
+            $table->foreign('userID')->references('id')->on('users')->onDelete('cascade')->onUpdate('No Action');
+            $table->string('city_name');
+            $table->string('other_details');
             $table->timestamps();
         });
     }

@@ -14,7 +14,11 @@ class CreateBookingsTable extends Migration
     public function up()
     {
         Schema::create('bookings', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->bigIncrements('bookID');
+            $table->unsignedBigInteger('userID')->index();
+            $table->foreign('userID')->references('id')->on('users')->onDelete('cascade')->onUpdate('No Action');
+            $table->binary('no_of_person');
+            $table->string('request');
             $table->timestamps();
         });
     }

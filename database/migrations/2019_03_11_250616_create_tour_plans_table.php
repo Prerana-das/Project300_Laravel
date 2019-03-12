@@ -14,7 +14,16 @@ class CreateTourPlansTable extends Migration
     public function up()
     {
         Schema::create('tour_plans', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->bigIncrements('plan_ID');
+            $table->unsignedBigInteger('tour_ID')->index();
+            $table->foreign('tour_ID')->references('tour_ID')->on('tours')->onDelete('cascade')->onUpdate('No Action');
+
+            $table->unsignedBigInteger('userID')->index()->nullable();
+            $table->foreign('userID')->references('id')->on('users')->onDelete('cascade')->onUpdate('No Action');
+
+            $table->string('tour_name',200);
+            $table->text('description');
+            $table->string('others_details');
             $table->timestamps();
         });
     }

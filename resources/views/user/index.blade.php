@@ -76,7 +76,7 @@ Home
 						<div class="col-lg-4 col-md-6  col-sm-12 col-xs-12">
 							<div class="single-feature">
 								<div class="feature-img">
-									<img src="images/bangladesh.jpg" alt="feature" />
+									<img src="{{asset('public/images/bangladesh.jpg')}}" alt="feature" />
 								</div>
 								<div class="feature-content">
 									<span>$250</span>
@@ -106,7 +106,7 @@ Home
 						<div class="col-lg-4 col-md-6  col-sm-12 col-xs-12">
 							<div class="single-feature">
 								<div class="feature-img">
-									<img src="images/shillong.jpg" alt="feature" />
+									<img src="{{asset('public/images/shillong.jpg')}}" alt="feature" />
 								</div>
 								<div class="feature-content">
 									<span>$250</span>
@@ -136,7 +136,7 @@ Home
 						<div class="col-lg-4 col-md-6  col-sm-12 col-xs-12">
 							<div class="single-feature">
 								<div class="feature-img">
-									<img src="images/srilanka.jpg" alt="feature" />
+									<img src="{{asset('public/images/srilanka.jpg')}}" alt="feature" />
 								</div>
 								<div class="feature-content">
 									<span>$250</span>
@@ -166,7 +166,7 @@ Home
 						<div class="col-lg-4 col-md-6  col-sm-12 col-xs-12">
 							<div class="single-feature">
 								<div class="feature-img">
-									<img src="images/maxresdefault.jpg" alt="feature" />
+									<img src="{{asset('public/images/maxresdefault.jpg')}}" alt="feature" />
 								</div>
 								<div class="feature-content">
 									<span>$250</span>
@@ -196,7 +196,7 @@ Home
 						<div class="col-lg-4 col-md-6  col-sm-12 col-xs-12">
 							<div class="single-feature">
 								<div class="feature-img">
-									<img src="images/Tasman_Lake.jpg" alt="feature" />
+									<img src="{{asset('public/images/Tasman_Lake.jpg')}}" alt="feature" />
 								</div>
 								<div class="feature-content">
 									<span>$250</span>
@@ -226,7 +226,7 @@ Home
 						<div class="col-lg-4 col-md-6  col-sm-12 col-xs-12">
 							<div class="single-feature">
 								<div class="feature-img">
-									<img src="images/Hero_RomeItaly.jpg" alt="feature" />
+									<img src="{{asset('public/images/Hero_RomeItaly.jpg')}}" alt="feature" />
 								</div>
 								<div class="feature-content">
 									<span>$250</span>
@@ -294,7 +294,7 @@ Home
 					<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
 						<div class="single-destination">
 							<div class="destination-img">
-								<img src="images/australia.jpg" alt="destination" />
+								<img src="{{asset('public/images/australia.jpg')}}" alt="destination" />
 							</div>
 							<h3>Australia</h3>
 							<span>3 Tours</span>
@@ -303,7 +303,7 @@ Home
 					<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
 						<div class="single-destination">
 							<div class="destination-img">
-								<img src="images/Canada.jpg" alt="destination" />
+								<img src="{{asset('public/images/Canada.jpg')}}" alt="destination" />
 							</div>
 							<h3>Canada</h3>
 							<span>3 Tours</span>
@@ -312,7 +312,7 @@ Home
 					<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
 						<div class="single-destination">
 							<div class="destination-img">
-								<img src="images/lonavla.jpg" alt="destination" />
+								<img src="{{asset('public/images/lonavla.jpg')}}" alt="destination" />
 							</div>
 							<h3>India</h3>
 							<span>3 Tours</span>
@@ -321,7 +321,7 @@ Home
 					<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
 						<div class="single-destination">
 							<div class="destination-img">
-								<img src="images/Koh-Lipe.jpg" alt="destination" />
+								<img src="{{asset('public/images/Koh-Lipe.jpg')}}" alt="destination" />
 							</div>
 							<h3>Thailand</h3>
 							<span>3 Tours</span>
@@ -348,7 +348,7 @@ Home
 						<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
 							<div class="single-offer">
 								<div class="offer-img">
-									<img src="images/florence.jpg" alt="offers" />
+									<img src="{{asset('public/images/florence.jpg')}}" alt="offers" />
 									<ul>
 										<li>&#36;2060</li>
 										<li>&#36;1699</li>
@@ -375,7 +375,7 @@ Home
 						<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
 							<div class="single-offer">
 								<div class="offer-img">
-									<img src="images/shutterstock111.jpg" alt="offers" />
+									<img src="{{asset('public/images/shutterstock111.jpg')}}" alt="offers" />
 									<ul>
 										<li>&#36;2060</li>
 										<li>&#36;1699</li>
@@ -402,7 +402,7 @@ Home
 						<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
 							<div class="single-offer">
 								<div class="offer-img">
-									<img src="images/gn-gift_guide_variable.jpg" alt="offers" />
+									<img src="{{asset('public/images/gn-gift_guide_variable.jpg')}}" alt="offers" />
 									<ul>
 										<li>&#36;2060</li>
 										<li>&#36;1699</li>

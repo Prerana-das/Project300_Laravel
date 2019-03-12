@@ -6,5 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Tour_plan extends Model
 {
-    //
+    protected $table = 'tour_plans';
+    protected $primaryKey = 'plan_ID';
+    protected $fillable = ['tour_name','description','others_details'];
 }

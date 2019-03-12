@@ -13,7 +13,10 @@
 
 Route::get('/','mainController@index'); //Run via controller (c.Loc:app>http>controllers)
 
-Route::get('/','mainController@index2');
+
+//contact
+Route::get('/','ContactController@contact_view');
+Route::post('reply/save', 'ContactControllerr@save');
 
 Auth::routes();
 
