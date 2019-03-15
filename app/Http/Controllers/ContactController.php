@@ -1,9 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-//use App\Users;
-
+use App\Message;
 use Illuminate\Http\Request;
+//use App\Http\Controllers\Controller;
 
 class ContactController extends Controller
 {
@@ -13,16 +13,15 @@ class ContactController extends Controller
     	return view('user/contact');
     }
 
-     public function save(Request $request){
-        $users = Users::find($request->userID);
-
+    public function save(Request $request){
         $table = new Message();
         $table->userID = $request->userID;
-        $table->name = $users->users['name'];
-        $table->email = $request->users['email'];
+        $table->name = $request->name;
+        //$table->email = $request->users['email'];
+        $table->email = $request->email;
         $table->description = $request->description;
         $table->save();
 
-        //return redirect()->back()->with(config('custom.save'));
+        return redirect()->back();
     }
 }

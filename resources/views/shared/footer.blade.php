@@ -80,7 +80,7 @@
 					<div class="footer-copyright">
 						<div class="row">
 							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-								<p>Design With <i class="fas fa-heart"></i> By Sobuj.All rights Reserved &copy; XovenTech</p>
+								<p>Design <i class="fas fa-heart"></i> By Prerana. All rights Reserved &copy; XovenTech</p>
 							</div>
 						</div>
 					</div>

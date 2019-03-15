@@ -28,13 +28,13 @@ Blog
 						<div class="col-lg-12">
 							<div class="single-blog">
 								<div class="blog-img">
-									<img src="images/blog/blog1.jpg" alt="blog" />
+									<img src="{{asset('public/images/blog/blog1.jpg')}}" alt="blog" />
 								</div>
 								<div class="col-lg-10 mx-auto">
 									<div class="single-blog-content">
 										<div class="profile">	
 											<ul>
-												<li><img src="images/blog/Blog-single.png" alt="blog" /></li>
+												<li><img src="{{asset('public/images/blog/Blog-single.png')}}" alt="blog" /></li>
 												<li>Jhon Lio</li>
 												<li>Nov 10, 2018</li>
 												<li>Travel</li>
@@ -58,13 +58,13 @@ Blog
 						<div class="col-lg-12">
 							<div class="single-blog">
 								<div class="blog-img">
-									<img src="images/blog/blog2.jpg" alt="blog" />
+									<img src="{{asset('public/images/blog/blog2.jpg')}}" alt="blog" />
 								</div>
 								<div class="col-lg-10 mx-auto">
 									<div class="single-blog-content">
 										<div class="profile">	
 											<ul>
-												<li><img src="images/blog/Blog-single.png" alt="blog" /></li>
+												<li><img src="{{asset('public/images/blog/Blog-single.png')}}" alt="blog" /></li>
 												<li>Jhon Lio</li>
 												<li>Nov 10, 2018</li>
 												<li>Travel</li>
@@ -88,13 +88,13 @@ Blog
 						<div class="col-lg-12">
 							<div class="single-blog">
 								<div class="blog-img">
-									<img src="images/blog/blog3.jpg" alt="blog" />
+									<img src="{{asset('public/images/blog/blog3.jpg')}}" alt="blog" />
 								</div>
 								<div class="col-lg-10 mx-auto">
 									<div class="single-blog-content">
 										<div class="profile">	
 											<ul>
-												<li><img src="images/blog/Blog-single.png" alt="blog" /></li>
+												<li><img src="{{asset('public/images/blog/Blog-single.png')}}" alt="blog" /></li>
 												<li>Jhon Lio</li>
 												<li>Nov 10, 2018</li>
 												<li>Travel</li>
@@ -118,13 +118,13 @@ Blog
 						<div class="col-lg-12">
 							<div class="single-blog">
 								<div class="blog-img">
-									<img src="images/blog/blog4.jpg" alt="blog" />
+									<img src="{{asset('public/images/blog/blog4.jpg')}}" alt="blog" />
 								</div>
 								<div class="col-lg-10 mx-auto">
 									<div class="single-blog-content">
 										<div class="profile">	
 											<ul>
-												<li><img src="images/blog/Blog-single.png" alt="blog" /></li>
+												<li><img src="{{asset('public/images/blog/Blog-single.png')}}" alt="blog" /></li>
 												<li>Jhon Lio</li>
 												<li>Nov 10, 2018</li>
 												<li>Travel</li>
@@ -148,13 +148,13 @@ Blog
 						<div class="col-lg-12">
 							<div class="single-blog">
 								<div class="blog-img">
-									<img src="images/blog/blog5.jpg" alt="blog" />
+									<img src="{{asset('public/images/blog/blog5.jpg')}}" alt="blog" />
 								</div>
 								<div class="col-lg-10 mx-auto">
 									<div class="single-blog-content">
 										<div class="profile">	
 											<ul>
-												<li><img src="images/blog/Blog-single.png" alt="blog" /></li>
+												<li><img src="{{asset('public/images/blog/Blog-single.png')}}" alt="blog" /></li>
 												<li>Jhon Lio</li>
 												<li>Nov 10, 2018</li>
 												<li>Travel</li>
@@ -207,14 +207,14 @@ Blog
 							<div class="all-latest-post">
 								<h4>Latest Post</h4>
 								<div class="latest-post">
-									<img src="images/blog/post1.jpg" alt="post" />
+									<img src="{{asset('public/images/blog/post1.jpg')}}" alt="post" />
 									<ul>
 										<li>May you like</li>
 										<li>Nov 10, 2018</li>
 									</ul>
 								</div>
 								<div class="latest-post">
-									<img src="images/blog/post2.jpg" alt="post" />
+									<img src="{{asset('public/images/blog/post2.jpg')}}" alt="post" />
 									<ul>
 										<li>May you like</li>
 										<li>Nov 10, 2018</li>
@@ -235,18 +235,18 @@ Blog
 							</div>
 							<div class="instragram">
 								<ul>
-									<li><img src="images/instragram/instragram1.jpg" alt="instragram" /></li>
-									<li><img src="images/instragram/instragram2.jpg" alt="instragram" /></li>
-									<li><img src="images/instragram/instragram3.jpg" alt="instragram" /></li>
-									<li><img src="images/instragram/instragram4.jpg" alt="instragram" /></li>
-									<li><img src="images/instragram/instragram5.jpg" alt="instragram" /></li>
-									<li><img src="images/instragram/instragram6.jpg" alt="instragram" /></li>
+									<li><img src="{{asset('public/images/instragram/instragram1.jpg')}}" alt="instragram" /></li>
+									<li><img src="{{asset('public/images/instragram/instragram2.jpg')}}" alt="instragram" /></li>
+									<li><img src="{{asset('public/images/instragram/instragram3.jpg')}}" alt="instragram" /></li>
+									<li><img src="{{asset('public/images/instragram/instragram4.jpg')}}" alt="instragram" /></li>
+									<li><img src="{{asset('public/images/instragram/instragram5.jpg')}}" alt="instragram" /></li>
+									<li><img src="{{asset('public/images/instragram/instragram6.jpg')}}" alt="instragram" /></li>
 								</ul>
 							</div>
 							<div class="add">
 								<p>50% Off  on</p>
 								<h4>Black Friday</h4>
-								<img src="images/hd-travel.png" alt="add" />
+								<img src="{{asset('public/images/hd-travel.png')}}" alt="add" />
 							</div>
 						</div>
 					</div>

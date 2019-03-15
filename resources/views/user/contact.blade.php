@@ -30,12 +30,12 @@ Contact
 						</div>
 					</div>
 					<div class="col-lg-12">
-						<form class="contact-form" method="POST" action="{{action('ContactController@save')}}>
+						<form class="contact-form" method="POST" action="{{action('ContactController@save')}}">
 							 {{ csrf_field() }}
 							<input type="text" placeholder="Name" name="name"/>
 							<input type="email" placeholder="Email" name="email"/>
 							<textarea name="description" placeholder="Your message" id="" cols="30" rows="5"></textarea>
-							<input type="submit" value="Submit"/>
+							<input type="submit" value="submit"/>
 						</form>
 					</div>
 					<div class="col-lg-12">

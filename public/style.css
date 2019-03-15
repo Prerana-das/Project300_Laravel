@@ -202,11 +202,10 @@ a.border-btn:hover{
 	display:inline-block;
 }
 .nav-list li a {
-	display: inline-block;
 	padding: 10px 18px;
-	color:#546092;
-	transition:.5s;
-	position:relative;
+	color: #546092;
+	transition: .5s;
+	position: relative;
 }
 .nav-list li a:hover{
 	color:#26baee;
@@ -221,13 +220,38 @@ a.border-btn:hover{
 .main-menu li > a.current {
 	color: #26baee;
 }
-.dropdown-menu {
-	background-color: #26baee;
-	display: block;
+.nav-list li a i{
+	padding-left:1px;
 }
-.dropdown-menu li a{
-	color:#fff;
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  z-index:111;
 }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 
 
 
@@ -1943,13 +1967,6 @@ span.end {
 	left: 16px;
 	border-radius: 2px;
 }
-.{}
-.{}
-.{}
-.{}
-.{}
-.{}
-.{}
 
 /*-----------------------------------------
  .error css
@@ -1964,6 +1981,90 @@ span.end {
 .error-content img {
 	margin-top:30px;
 	width: 50%;
+}
+
+
+/*-----------------------------------------
+ .admin panel css
+ ------------------------------------------*/
+.admin-header{
+	background-color:#fff;
+	padding:10px 0px;
+	border-bottom:1px solid #26A69A;
+}
+.admin-area{
+	background-color:#f5f5f5;
+}
+.admin-logo a {
+	padding: 0px 10px;
+}
+.admin-info {
+	padding: 0px 34px 0px 0px;
+}
+.admin-info h3 {
+	margin-left: 8px;
+	display: inline-block;
+	font-size: 15px;
+}
+.admin-info i {
+	color: #ddd;
+	background-color: #696969;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	font-size: 10px;
+}
+.admin-area .col-lg-2{
+	padding-left:0px;
+}
+.admin-sidebar {
+	border-top:2px solid #ebebeb;
+	background-color: #222D32;
+	height: 91vh;
+}
+.admin-sidebar ul{}
+.admin-sidebar ul li:first-child{
+	font-weight:800;
+	background-color: #26A69A;
+}
+.admin-sidebar ul li {
+	padding: 14px 25px;
+	color: #ebebeb;
+	font-size: 14px;
+	border-bottom: 1px solid #ebebeb;
+	transition:.5s;
+}
+.admin-sidebar ul li a{
+	color: #ebebeb;
+	font-weight:800;
+}
+.admin-sidebar ul li:hover{
+	background-color: #26A69A;
+	border-bottom: 1px solid #26A69A;
+}
+.admin-content {
+	width: 100%;
+	background-color: #fff;
+	margin: 20px;
+	padding: 20px;
+	border-top:1px solid #26A69A;
+}
+
+
+/* admin message css */
+
+.admin-content td i{
+	background-color:#03AB6F;
+	color: #fff;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+.admin-content td a:last-child i{
+	margin: 0px 0px 0px 6px;
+	background-color:#F44336;
 }
 
 

@@ -117,7 +117,7 @@ Tour
 											<div class="row">
 												<div class="col-lg-5">
 													<div class="tour-img">
-														<img src="images/bangladesh.jpg" alt="feature" />
+														<img src="{{asset('public/images/bangladesh.jpg')}}" alt="feature" />
 													</div>
 													<div class="tour-img-cont">
 														<span>$250</span>
@@ -152,7 +152,7 @@ Tour
 											<div class="row">
 												<div class="col-lg-5">
 													<div class="tour-img">
-														<img src="images/shillong.jpg" alt="feature" />
+														<img src="{{asset('public/images/shillong.jpg')}}" alt="feature" />
 													</div>
 													<div class="tour-img-cont">
 														<span>$250</span>
@@ -187,7 +187,7 @@ Tour
 											<div class="row">
 												<div class="col-lg-5">
 													<div class="tour-img">
-														<img src="images/srilanka.jpg" alt="feature" />
+														<img src="{{asset('public/images/srilanka.jpg')}}" alt="feature" />
 													</div>
 													<div class="tour-img-cont">
 														<span>$250</span>
@@ -221,7 +221,7 @@ Tour
 											<div class="row">
 												<div class="col-lg-5">
 													<div class="tour-img">
-														<img src="images/maxresdefault.jpg" alt="feature" />
+														<img src="{{asset('public/images/maxresdefault.jpg')}}" alt="feature" />
 													</div>
 													<div class="tour-img-cont">
 														<span>$250</span>
@@ -255,7 +255,7 @@ Tour
 											<div class="row">
 												<div class="col-lg-5">
 													<div class="tour-img">
-														<img src="images/Tasman_Lake.jpg" alt="feature" />
+														<img src="{{asset('public/images/Tasman_Lake.jpg')}}" alt="feature" />
 													</div>
 													<div class="tour-img-cont">
 														<span>$250</span>
@@ -290,7 +290,7 @@ Tour
 											<div class="row">
 												<div class="col-lg-5">
 													<div class="tour-img">
-														<img src="images/Hero_RomeItaly.jpg" alt="feature" />
+														<img src="{{asset('public/images/Hero_RomeItaly.jpg')}}" alt="feature" />
 													</div>
 													<div class="tour-img-cont">
 														<span>$250</span>

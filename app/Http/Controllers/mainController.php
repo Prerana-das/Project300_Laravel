@@ -10,9 +10,4 @@ class mainController extends Controller
     {
     	return view('user/index');
     }
-
-    public function index2()
-    {
-    	return view('user/index');
-    }
 }

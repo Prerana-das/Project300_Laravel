@@ -429,7 +429,7 @@ Home
 						<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
 							<div class="single-offer">
 								<div class="offer-img">
-									<img src="images/jhmr_events.jpg" alt="offers" />
+									<img src="{{asset('public/images/jhmr_events.jpg')}}" alt="offers" />
 									<ul>
 										<li>&#36;2060</li>
 										<li>&#36;1699</li>
@@ -456,7 +456,7 @@ Home
 						<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
 							<div class="single-offer">
 								<div class="offer-img">
-									<img src="images/event2.jpg" alt="offers" />
+									<img src="{{asset('public/images/event2.jpg')}}" alt="offers" />
 									<ul>
 										<li>&#36;2060</li>
 										<li>&#36;1699</li>
@@ -483,7 +483,7 @@ Home
 						<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
 							<div class="single-offer">
 								<div class="offer-img">
-									<img src="images/987ff5stockhome.jpg" alt="offers" />
+									<img src="{{asset('public/images/987ff5stockhome.jpg')}}" alt="offers" />
 									<ul>
 										<li>&#36;2060</li>
 										<li>&#36;1699</li>
@@ -531,21 +531,21 @@ Home
 					<div class="row"> 
 						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 							<div class="single-service wow animated slideInUp">
-								<img src="images/service/service1.png" alt="service" />
+								<img src="{{asset('public/images/service/service1.png')}}" alt="service" />
 								<h3>Stay Safe</h3>
 								<p>To blonde a for no determined the still on in and raised will each or prepared be in lowest structure write that blind in</p>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-4  col-sm-12 col-xs-12">
 							<div class="single-service wow animated slideInUp">
-								<img src="images/service/service2.png" alt="service" />
+								<img src="{{asset('public/images/service/service2.png')}}" alt="service" />
 								<h3>Quality Service</h3>
 								<p>To blonde a for no determined the still on in and raised will each or prepared be in lowest structure write that blind in </p>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 							<div class="single-service wow animated slideInUp">
-								<img src="images/service/service3.png" alt="service" />
+								<img src="{{asset('public/images/service/service3.png')}}" alt="service" />
 								<h3>Save Money</h3>
 								<p>To blonde a for no determined the still on in and raised will each or prepared be in lowest structure write that blind in </p>
 							</div>
@@ -573,7 +573,7 @@ Home
 						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 							<div class="single-blog">
 								<div class="blog-img">
-									<img src="images/shutterstock.jpg" alt="blog" />
+									<img src="{{asset('public/images/shutterstock.jpg')}}" alt="blog" />
 									<span>TRAVEL</span>
 								</div>
 								<div class="blog-content">
@@ -588,7 +588,7 @@ Home
 						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 							<div class="single-blog">
 								<div class="blog-img">
-									<img src="images/Bali.jpg" alt="blog" />
+									<img src="{{asset('public/images/Bali.jpg')}}" alt="blog" />
 									<span>LIFESTYLE</span>
 								</div>
 								<div class="blog-content">
@@ -603,7 +603,7 @@ Home
 						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 							<div class="single-blog">
 								<div class="blog-img">
-									<img src="images/shutterstock-6.jpg" alt="blog" />
+									<img src="{{asset('public/images/shutterstock-6.jpg')}}" alt="blog" />
 									<span>PHOTOGRAPHY</span>
 								</div>
 								<div class="blog-content">
