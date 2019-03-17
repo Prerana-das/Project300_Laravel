@@ -1,6 +1,6 @@
 @extends('layouts/admin_master')
 @section('title')
-Messages
+Edit Messages
 @endsection
 
 @section('content')
@@ -10,6 +10,7 @@ Messages
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="message-content">
+							<h4>Edit Message</h4>
 							<table class="table table-bordered">
 							  <thead>
 								<tr>
@@ -17,24 +18,16 @@ Messages
 								  <th scope="col">Name</th>
 								  <th scope="col">Email</th>
 								  <th scope="col">Messages</th>
-								  <th scope="col">Date</th>
-								  <th scope="col">Action</th>
+								
 								</tr>
 							  </thead>
 							  <tbody>
-							  	 @foreach($table as $row)
 								<tr>
-								  <th scope="row">{{$row->messageID}}</th>
-								  <td>{{$row->name}}</td>
-								  <td>{{$row->email}}</td>
-								  <td>{{$row->description}}</td>
-								  <td>{{$row->created_at}}</td>
-								  <td>
-								  	<a href="{{action('Admin\MessageController@edit_message', ['id' => $row->messageID])}}"><i class="fas fa-edit"></i></a>
-								  	<a href="{{action('Admin\MessageController@del', ['id' => $row->messageID])}}">
-								  		<i class="far fa-trash-alt"></i></a></td>
+								  <th scope="row">1</th>
+								  <td>Mark</td>
+								  <td>Otto</td>
+								  <td>@mdo</td>
 								</tr>
-								 @endforeach
 							  </tbody>
 							</table>
 						</div>

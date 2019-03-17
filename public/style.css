@@ -2067,5 +2067,30 @@ span.end {
 	background-color:#F44336;
 }
 
+a.add-btn, .admin-content input[type="submit"]{
+	background-color: #26A69A;
+	border: 1px solid #26A69A;
+	color: #fff;
+	padding: 8px 50px;
+	border-radius: 2px;
+	font-size: 15px;
+	position: relative;
+	transition: .5s;
+	display: inline-block;
+	margin-bottom:20px;
+	font-weight:bold;
+}
+a.add-btn:hover, .admin-content input[type="submit"]:hover{
+	background-color: transparent;
+	color: #26A69A;
+	cursor:pointer;
+}
+.add-category-form{}
+.add-category-form input[type="text"]{
+	border:1px solid #26A69A;
+	padding:10px;
+	margin-bottom:20px;
+}
+
 
 

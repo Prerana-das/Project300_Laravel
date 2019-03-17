@@ -20,7 +20,7 @@ class ContactController extends Controller
         //$table->email = $request->users['email'];
         $table->email = $request->email;
         $table->description = $request->description;
-        $table->save();
+        $table->save(); //table must be save
 
         return redirect()->back();
     }

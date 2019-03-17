@@ -16,8 +16,8 @@ class CreateToursTable extends Migration
         Schema::create('tours', function (Blueprint $table) {
             $table->bigIncrements('tour_ID');
 
-            $table->unsignedBigInteger('catagoryID')->index();
-            $table->foreign('catagoryID')->references('catagoryID')->on('categories')->onDelete('cascade')->onUpdate('No Action');
+            $table->unsignedBigInteger('categoryID')->index();
+            $table->foreign('categoryID')->references('categoryID')->on('categories')->onDelete('cascade')->onUpdate('No Action');
 
             $table->unsignedBigInteger('countryID')->index();
             $table->foreign('countryID')->references('countryID')->on('countries')->onDelete('cascade')->onUpdate('No Action');

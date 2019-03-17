@@ -5,14 +5,16 @@
 					<div class="admin-sidebar">
 						<ul>
 							<li>Dashboard</li>
-							<li><a href="category.html">Category</a></li>
-							<li><a href="country.html">Country</a></li>
-							<li><a href="city.html">City</a></li>
-							<li><a href="message.html">Message</a></li>
-							<li><a href="tour_list.html">All Tour</a></li>
-							<li><a href="tour_plan.html">Tour Plan</a></li>
-							<li><a href="booking_list.html">Booking</a></li>
-							<li><a href="user_list.html">User List</a></li>
+							<li><a href="{{action('Admin\CategoryController@index')}}">Category</a></li>
+							<li><a href="{{action('Admin\CountryController@index')}}">Country</a></li>
+							<li><a href="{{action('Admin\CityController@index')}}">City</a></li>
+							<li>
+							<a href="{{action('Admin\MessageController@index')}}">
+							Message</a></li>
+							<li><a href="{{action('Admin\AllTourController@index')}}">All Tour</a></li>
+							<li><a href="{{action('Admin\TourPlanController@index')}}">Tour Plan</a></li>
+							<li><a href="{{action('Admin\BookingController@index')}}">Booking</a></li>
+							<li><a href="{{action('Admin\UserListController@index')}}">User List</a></li>
 							<li><a href="">Logout</a></li>
 						</ul>	
 					</div>

@@ -10,20 +10,28 @@ Category
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="category-content">
+							 <a class="add-btn" href="{{action('Admin\CategoryController@add_category')}}">Add Category</a>
 							<table class="table table-bordered">
 							  <thead>
 								<tr>
 								  <th scope="col">#</th>
 								  <th scope="col">Category Name</th>
+								  <th scope="col">Date</th>
 								  <th scope="col">Action</th>
 								</tr>
 							  </thead>
 							  <tbody>
+							  	 @foreach($table as $row)
 								<tr>
-								  <th scope="row">1</th>
-								  <td>Mark</td>
-								  <td><a href=""><i class="fas fa-edit"></i></a><a href=""><i class="far fa-trash-alt"></i></a></td>
+								  <th scope="row">{{$row->categoryID}}</th>
+								  <td>{{$row->name}}</td>
+								  <td>{{$row->created_at}}</td>
+								  <td>
+								  	<a href="{{action('Admin\CategoryController@edit_category', ['id' => $row->categoryID])}}"><i class="fas fa-edit"></i></a>
+								  	<a href="{{action('Admin\CategoryController@del', ['id' => $row->categoryID])}}">
+								  		<i class="far fa-trash-alt"></i></a></td>
 								</tr>
+								 @endforeach
 							  </tbody>
 							</table>
 						</div>

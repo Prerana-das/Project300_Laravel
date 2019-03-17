@@ -99,7 +99,7 @@ Home
 										<li>Medical Support</li>
 										<li>Updown with Modern Air</li>
 									</ul>
-									<a href="#">Read More</a>
+									<a href="{{action('SingleTour\InformationController@index')}}">Read More</a>
 								</div>
 							</div>
 						</div>	
@@ -129,7 +129,7 @@ Home
 										<li>Medical Support</li>
 										<li>Updown with Modern Air</li>
 									</ul>
-									<a href="#">Read More</a>
+									<a href="{{action('SingleTour\InformationController@index')}}">Read More</a>
 								</div>
 							</div>
 						</div>	
@@ -159,7 +159,7 @@ Home
 										<li>Medical Support</li>
 										<li>Updown with Modern Air</li>
 									</ul>
-									<a href="#">Read More</a>
+									<a href="{{action('SingleTour\InformationController@index')}}">Read More</a>
 								</div>
 							</div>
 						</div>
@@ -189,7 +189,7 @@ Home
 										<li>Medical Support</li>
 										<li>Updown with Modern Air</li>
 									</ul>
-									<a href="#">Read More</a>
+									<a href="{{action('SingleTour\InformationController@index')}}">Read More</a>
 								</div>
 							</div>
 						</div>
@@ -219,7 +219,7 @@ Home
 										<li>Medical Support</li>
 										<li>Updown with Modern Air</li>
 									</ul>
-									<a href="#">Read More</a>
+									<a href="{{action('SingleTour\InformationController@index')}}">Read More</a>
 								</div>
 							</div>
 						</div>
@@ -249,7 +249,7 @@ Home
 										<li>Medical Support</li>
 										<li>Updown with Modern Air</li>
 									</ul>
-									<a href="#">Read More</a>
+									<a href="{{action('SingleTour\InformationController@index')}}">Read More</a>
 								</div>
 							</div>
 						</div>
@@ -368,7 +368,7 @@ Home
 										</li>
 									</ul>
 									<p>Is out produce outcomes said out have bale avoided cities a he detailed immune...</p>
-									<a href="#">View Details</a>
+									<a href="{{action('SingleTour\InformationController@index')}}">View Details</a>
 								</div>
 							</div>
 						</div>
