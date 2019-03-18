@@ -22,8 +22,7 @@ class CategoryController extends Controller
         $table = new Category();
         $table->name = $request->name;
         $table->save();
-
-        return redirect()->to('/');
+        return redirect('category/view');
     }
 
     public function edit_category($id){

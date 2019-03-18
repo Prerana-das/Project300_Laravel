@@ -15,7 +15,7 @@ class CreateTourPlansTable extends Migration
     {
         Schema::create('tour_plans', function (Blueprint $table) {
             $table->bigIncrements('plan_ID');
-            $table->unsignedBigInteger('tour_ID')->index();
+            $table->unsignedBigInteger('tour_ID')->index()->nullable();
             $table->foreign('tour_ID')->references('tour_ID')->on('tours')->onDelete('cascade')->onUpdate('No Action');
 
             $table->unsignedBigInteger('userID')->index()->nullable();

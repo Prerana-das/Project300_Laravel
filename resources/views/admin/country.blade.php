@@ -10,6 +10,7 @@ Country
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="country-content">
+							 <a class="add-btn" href="{{action('Admin\CountryController@add_country')}}">Add Country</a>
 							<table class="table table-bordered">
 							  <thead>
 								<tr>

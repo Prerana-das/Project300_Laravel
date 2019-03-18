@@ -56,9 +56,17 @@ Route::get('category/edit_category/{id}','Admin\CategoryController@edit_category
 Route::post('category/edit','Admin\CategoryController@edit');
 Route::get('category/{id}','Admin\CategoryController@del');
 
-
+/////////Country
 Route::get('country/view', 'Admin\CountryController@index');
+Route::get('country/add_country', 'Admin\CountryController@add_country');
+Route::POST('country/save', 'Admin\CountryController@save');
+
+/////////City
 Route::get('city/view', 'Admin\CityController@index');
+Route::get('city/add_city', 'Admin\CityController@add_city');
+Route::POST('city/save', 'Admin\CityController@save');
+
+
 Route::get('allTour/view', 'Admin\AllTourController@index');
 Route::get('tourPlan/view', 'Admin\TourPlanController@index');
 Route::get('booking/view', 'Admin\BookingController@index');

@@ -10,6 +10,7 @@ City
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="city-content">
+							 <a class="add-btn" href="{{action('Admin\CityController@add_city')}}">Add City</a>
 							<table class="table table-bordered">
 							  <thead>
 								<tr>
