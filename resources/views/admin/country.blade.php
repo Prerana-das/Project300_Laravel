@@ -23,9 +23,9 @@ Country
 							  <tbody>
 								<tr>
 								  <th scope="row">1</th>
-								  <td>Mark</td>
-								  <td>Mark</td>
-								  <td>Mark</td>
+								  <td>Singapore</td>
+								  <td>Sentosa</td>
+								  <td>Gardens by the Bay is a nature park spanning 101 hectares<br/> of reclaimed land in the Central Region of Singapore.</td>
 								  <td><a href=""><i class="fas fa-edit"></i></a><a href=""><i class="far fa-trash-alt"></i></a></td>
 								</tr>
 							  </tbody>

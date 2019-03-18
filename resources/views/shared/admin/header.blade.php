@@ -12,7 +12,7 @@
                     <div class="admin-info">
                         <i class="fas fa-spinner"></i>
                         <i class="fas fa-user"></i>
-                        <h3>Jack</h3>
+                        <h3>Inspiration</h3>
                     </div>
                 </div>
             </div>

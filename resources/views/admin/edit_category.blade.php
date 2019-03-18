@@ -10,7 +10,7 @@ Edit Messages
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="message-content">
-							<h4>Edit Message</h4>
+							<h4>Edit Category</h4>
 							<form action="{{action('Admin\CategoryController@edit')}}" method="post" enctype="multipart/form-data">
                 						{{csrf_field()}}
 							<table class="table table-bordered">
