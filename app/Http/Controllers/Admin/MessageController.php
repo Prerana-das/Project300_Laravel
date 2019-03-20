@@ -16,25 +16,9 @@ class MessageController extends Controller
         return view('admin.message')->with(['user'=>$user,'table'=>$table]);
     }
 
-    public function edit_message($id){
-        $table = Message::find($id);
-        return view('admin.edit_message')->with(['table' => $table]);
-    }
-    
-    public function edit(Request $request){
-        $table = Message::find($request->messageID);
-        $table->name = $request->name;
-        $table->email = $request->email;
-        $table->description = $request->description;
-        $table->save();
-
-        return redirect()->to('/');
-    }
-
      public function del($id){
         $table = Message::find($id);
         $table->delete();
-
         //return redirect()->back()->with(config('custom.del'));
         return redirect()->back();
     }

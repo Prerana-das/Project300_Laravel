@@ -45,7 +45,6 @@ Route::get('admin','AdminController@admin_view');
 
 //Route::get('message','MessageController@message_view');
 Route::get('message/view', 'Admin\MessageController@index');
-Route::get('message/edit/{id}','Admin\MessageController@edit_message');
 Route::get('message/{id}','Admin\MessageController@del');
 
 
@@ -59,12 +58,18 @@ Route::get('category/{id}','Admin\CategoryController@del');
 /////////Country
 Route::get('country/view', 'Admin\CountryController@index');
 Route::get('country/add_country', 'Admin\CountryController@add_country');
-Route::POST('country/save', 'Admin\CountryController@save');
+Route::post('country/save', 'Admin\CountryController@save');
+Route::get('country/edit_country/{id}','Admin\CountryController@edit_country');
+Route::post('country/edit','Admin\CountryController@edit');
+Route::get('country/{id}','Admin\CountryController@del');
 
 /////////City
 Route::get('city/view', 'Admin\CityController@index');
 Route::get('city/add_city', 'Admin\CityController@add_city');
-Route::POST('city/save', 'Admin\CityController@save');
+Route::post('city/save', 'Admin\CityController@save');
+Route::get('city/edit_city/{id}','Admin\CityController@edit_city');
+Route::post('city/edit','Admin\CityController@edit');
+Route::get('city/{id}','Admin\CityController@del');
 
 
 Route::get('allTour/view', 'Admin\AllTourController@index');

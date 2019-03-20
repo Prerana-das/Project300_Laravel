@@ -30,7 +30,6 @@ Messages
 								  <td>{{$row->description}}</td>
 								  <td>{{$row->created_at}}</td>
 								  <td>
-								  	<a href="{{action('Admin\MessageController@edit_message', ['id' => $row->messageID])}}"><i class="fas fa-edit"></i></a>
 								  	<a href="{{action('Admin\MessageController@del', ['id' => $row->messageID])}}">
 								  		<i class="far fa-trash-alt"></i></a></td>
 								</tr>

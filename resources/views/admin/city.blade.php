@@ -16,17 +16,24 @@ City
 								<tr>
 								  <th scope="col">#</th>
 								  <th scope="col">City Name</th>
+								  <th scope="col">Country Name</th>
 								  <th scope="col">Details</th>
 								  <th scope="col">Action</th>
 								</tr>
 							  </thead>
 							  <tbody>
+							  	@foreach($table as $row)
 								<tr>
-								  <th scope="row">1</th>
-								  <td>Mark</td>
-								  <td>Mark</td>
-								  <td><a href=""><i class="fas fa-edit"></i></a><a href=""><i class="far fa-trash-alt"></i></a></td>
+								  <th scope="row">{{$row->cityID}}</th>
+								  <td>{{$row->city_name}}</td>
+								  <td>{{$row->country['country_name']}}</td>
+								  <td>{{$row->other_details}}</td>
+								  <td>
+								  	<a href="{{action('Admin\CityController@edit_city', ['id' => $row->cityID])}}"><i class="fas fa-edit"></i></a>
+								  	<a href="{{action('Admin\CityController@del', ['id' => $row->cityID])}}">
+								  		<i class="far fa-trash-alt"></i></a></td>
 								</tr>
+								 @endforeach
 							  </tbody>
 							</table>
 						</div>

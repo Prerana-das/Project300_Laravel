@@ -9,4 +9,8 @@ class Cities extends Model
     protected $table = 'cities';
     protected $primaryKey = 'cityID';
     protected $fillable = ['city_name','other_details'];
+
+	public function country() {
+        return $this->belongsTo('App\Countries','countryID');
+    }
 }

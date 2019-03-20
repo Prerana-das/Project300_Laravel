@@ -22,13 +22,18 @@ Country
 								</tr>
 							  </thead>
 							  <tbody>
+							  	@foreach($table as $row)
 								<tr>
-								  <th scope="row">1</th>
-								  <td>Singapore</td>
-								  <td>Sentosa</td>
-								  <td>Gardens by the Bay is a nature park spanning 101 hectares<br/> of reclaimed land in the Central Region of Singapore.</td>
-								  <td><a href=""><i class="fas fa-edit"></i></a><a href=""><i class="far fa-trash-alt"></i></a></td>
+								  <th scope="row">{{$row->countryID}}</th>
+								  <td>{{$row->country_name}}</td>
+								  <td>{{$row->country_region}}</td>
+								  <td>{{$row->other_details}}<br/></td>
+								  <td>
+								  	<a href="{{action('Admin\CountryController@edit_country', ['id' => $row->countryID])}}"><i class="fas fa-edit"></i></a>
+								  	<a href="{{action('Admin\CountryController@del', ['id' => $row->countryID])}}">
+								  		<i class="far fa-trash-alt"></i></a></td>
 								</tr>
+								 @endforeach
 							  </tbody>
 							</table>
 						</div>
