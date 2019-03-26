@@ -11,7 +11,7 @@ class CategoryController extends Controller
      public function index(){
         $user = User::all();
         $table =Category::orderBy('categoryID','ASC')->get();
-        return view('admin.Category')->with(['user'=>$user,'table'=>$table]);
+        return view('admin.category')->with(['user'=>$user,'table'=>$table]);
     }
 
      public function add_category(){

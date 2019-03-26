@@ -10,7 +10,7 @@ Tour List
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="tour-list-content">
-							 <a class="add-btn" href="">Add Tour</a>
+							 <a class="add-btn" href="{{action('Admin\AllTourController@add_allTour')}}">Add Tour</a>
 							<table class="table table-bordered">
 							  <thead>
 								<tr>

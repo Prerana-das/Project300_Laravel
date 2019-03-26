@@ -31,7 +31,6 @@ class CreateToursTable extends Migration
             $table->binary('tour_length');
             $table->string('tour_description');
             $table->string('imageName');
-            $table->boolean('isDefault')->default(0);
             $table->string('start_place');
             $table->string('start_time');
             $table->string('return_time');

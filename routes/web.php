@@ -73,6 +73,11 @@ Route::get('city/{id}','Admin\CityController@del');
 
 
 Route::get('allTour/view', 'Admin\AllTourController@index');
+Route::get('allTour/add_allTour', 'Admin\AllTourController@add_allTour');
+Route::post('allTour/save', 'Admin\AllTourController@save');
+
+
+
 Route::get('tourPlan/view', 'Admin\TourPlanController@index');
 Route::get('booking/view', 'Admin\BookingController@index');
 Route::get('user/view', 'Admin\UserListController@index');

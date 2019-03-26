@@ -24,6 +24,10 @@
 		<!-- Bootstrap core CSS -->
 		<link rel="stylesheet" type="text/css" href="{{asset('public/css/bootstrap.min.css')}}" media="all" />
 		<!-- Custom styles for this template -->
+	   <link rel="stylesheet" type="text/css" href="{{asset('public/plugins/datatableCSS/jquery.dataTables.min.css')}}" media="all" />
+
+	   <link rel="stylesheet" type="text/css" href="{{asset('public/plugins/datatableCSS/dataTables.bootstrap.css')}}" media="all" />
+
 	   <link rel="stylesheet" type="text/css" href="{{asset('public/style.css')}}" media="all" />
 	   <!-- Responsive CSS -->
 		<link rel="stylesheet" type="text/css" href="{{asset('public/css/responsive.css')}}" media="all" />
@@ -52,8 +56,12 @@
 		<script src="{{asset('public/js/jquery.magnific-popup.min.j')}}"></script>
 		<script src="{{asset('public/js/onepagenav.j')}}"></script>
 		<script src="{{asset('public/js/isotope.pkgd.min.js')}}"></script>
+		<script src="{{asset('public/plugins/datatables/dataTables.bootstrap.min.js')}}"></script>
+		<script src="{{asset('public/plugins/datatables/jquery.dataTables.min.js')}}"></script>
 		<script src="{{asset('public/js/wow.min.js')}}"></script>
 		<script src="{{asset('public/js/main.js')}}"></script>
 		<script src="{{asset('public/js/holder.min.js')}}"></script>
+
+		@yield('script')
 	</body>
 </html>

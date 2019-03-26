@@ -11,7 +11,7 @@ Category
 					<div class="col-lg-12">
 						<div class="category-content">
 							 <a class="add-btn" href="{{action('Admin\CategoryController@add_category')}}">Add Category</a>
-							<table class="table table-bordered">
+							<table id="dataTable" class="table table-bordered">
 							  <thead>
 								<tr>
 								  <th scope="col">#</th>
@@ -40,4 +40,19 @@ Category
 			</div>
 		</div>
 	</div>
+@endsection
+
+@section('script')
+    <script type="text/javascript">
+        $(function () {
+            $('#dataTable').DataTable({
+                "order": [[ 0, "ASC" ]],
+                "iDisplayLength": 25,
+                "columnDefs": [
+                    { "orderable": false, "targets": [1]}//For Column Order
+                ]
+            });
+        });
+    </script>
+
 @endsection

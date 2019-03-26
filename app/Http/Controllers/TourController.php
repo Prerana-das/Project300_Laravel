@@ -10,4 +10,5 @@ class TourController extends Controller
     {
     	return view('user/tour');
     }
+
 }

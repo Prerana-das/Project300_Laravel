@@ -3,6 +3,9 @@
 namespace App\Http\Controllers\Admin;
 use App\User;
 use App\Tours;
+use App\Countries;
+use App\Cities;
+use App\Category;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -14,18 +17,39 @@ class AllTourController extends Controller
         return view('admin.tour_list')->with(['user'=>$user,'table'=>$table]);
     }
 
-    public function add_city(){
-        $country = Countries::orderBy('country_name','ASC')->get();
-        return view('admin.add_city')->with(['country'=>$country]);
+    public function add_allTour(){
+        $country = Countries::orderBy('countryID','ASC')->get();
+        $city = Cities::orderBy('cityID','ASC')->get();
+        $category = Category::orderBy('categoryID','ASC')->get();
+        return view('admin.tour.add_allTour')->with(['country'=>$country,
+        	'city'=>$city,'category'=>$category]);
     }
 
      public function save(Request $request){
-        $table = new Cities();
+        $table = new Tours();
+        $table->categoryID = $request->categoryID;
         $table->countryID = $request->countryID;
-        $table->city_name = $request->city_name;
-        $table->other_details = $request->other_details;
+        $table->cityID = $request->cityID;
+        $table->tour_length = $request->tour_length;
+        $table->tour_description = $request->tour_description;
+
+         if ($request->hasFile('imageName')) {
+
+            $extension = $request->imageName->extension();
+            $filename =  md5(date('Y-m-d H:i:s'));
+            $filename = $filename.'.'.$extension;
+
+            $table->imageName = $filename;
+
+            $request->imageName->move('public/uploads/Tours',$filename);
+        }
+
+        $table->start_place = $request->start_place;
+        $table->start_time = $request->start_time;
+        $table->return_time = $request->return_time;
+
         $table->save();
-        return redirect()->to('city/view');
+        return redirect()->to('allTour/view');
     }
 
 }
