@@ -37,6 +37,10 @@
                                 @endforeach
                             </select>
 
+                             <label>Tour name</label>
+                            <input type="text" id="" name="tour_name" placeholder="Enter Category Name.."><br/>
+
+                            
                             <label>Tour length</label>
                             <input type="text" name="tour_length" placeholder="Tour length.."><br/>
                             <label>Description</label>

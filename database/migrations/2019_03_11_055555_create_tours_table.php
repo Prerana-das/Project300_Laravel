@@ -28,6 +28,8 @@ class CreateToursTable extends Migration
             $table->unsignedBigInteger('userID')->index()->nullable();
             $table->foreign('userID')->references('id')->on('users')->onDelete('cascade')->onUpdate('No Action');
 
+            $table->string('tour_name');
+
             $table->binary('tour_length');
             $table->string('tour_description');
             $table->string('imageName');

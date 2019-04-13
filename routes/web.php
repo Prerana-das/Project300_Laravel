@@ -79,6 +79,9 @@ Route::post('allTour/save', 'Admin\AllTourController@save');
 
 
 Route::get('tourPlan/view', 'Admin\TourPlanController@index');
+Route::get('tourPlan/add', 'Admin\TourPlanController@add_TourPlan');
+Route::post('tourPlan/save', 'Admin\TourPlanController@save');
+
 Route::get('booking/view', 'Admin\BookingController@index');
 Route::get('user/view', 'Admin\UserListController@index');
 

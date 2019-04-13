@@ -30,6 +30,7 @@ class AllTourController extends Controller
         $table->categoryID = $request->categoryID;
         $table->countryID = $request->countryID;
         $table->cityID = $request->cityID;
+        $table->tour_name = $request->tour_name;
         $table->tour_length = $request->tour_length;
         $table->tour_description = $request->tour_description;
 

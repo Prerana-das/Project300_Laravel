@@ -15,10 +15,14 @@
                             {{csrf_field()}}
                             <label>Country Name</label>
                             <input type="text" name="country_name" placeholder="Enter Country Name.."><br/>
-                            <label>Country Name</label>
-                            <input type="text"  name="country_region" placeholder="Enter Country Name.."><br/>
-                            <label>Country Name</label>
-                            <input type="text"  name="other_details" placeholder="Enter Country Name.."><br/>
+
+                             <label>Country Image</label>
+                            <input type="file" name="country_img" placeholder=""><br/>
+
+                            <label>Country Region</label>
+                            <input type="text"  name="country_region" placeholder=""><br/>
+                            <label>Other Details</label>
+                            <input type="text"  name="other_details" placeholder=""><br/>
                             <input type="submit" value="Submit">
                         </form>
                     </div>

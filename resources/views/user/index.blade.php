@@ -73,14 +73,15 @@ Home
 						</div>
 					</div>
 					<div class="row">
+						@foreach($tour as $row)
 						<div class="col-lg-4 col-md-6  col-sm-12 col-xs-12">
 							<div class="single-feature">
 								<div class="feature-img">
-									<img src="{{asset('public/images/bangladesh.jpg')}}" alt="feature" />
+									<img src="{{asset('public/uploads/Tours/'.$row->imageName)}}" alt="feature" />
 								</div>
 								<div class="feature-content">
 									<span>$250</span>
-									<p>Explore Sylhet, Bangladesh</p>
+									<p>{{$row->tour_name}}</p>
 									<ul>
 										<li>
 											<i class="fas fa-star"></i>
@@ -92,167 +93,19 @@ Home
 									</ul>
 								</div>
 								<div class="feature-hover-effect">
-									<h4>Explore Silong, India</h4>
+									<h4>{{$row->tour_name}}</h4>
 									<ul>
-										<li>4 Days 3 Nights</li>
-										<li>Buffet Lunch and Dinner</li>
+										<li>{{$row->tour_description}}</li>
+										<!--<li>Buffet Lunch and Dinner</li>
 										<li>Medical Support</li>
-										<li>Updown with Modern Air</li>
+										<li>Updown with Modern Air</li>-->
 									</ul>
 									<a href="{{action('SingleTour\InformationController@index')}}">Read More</a>
 								</div>
 							</div>
 						</div>	
-						<div class="col-lg-4 col-md-6  col-sm-12 col-xs-12">
-							<div class="single-feature">
-								<div class="feature-img">
-									<img src="{{asset('public/images/shillong.jpg')}}" alt="feature" />
-								</div>
-								<div class="feature-content">
-									<span>$250</span>
-									<p>Explore Sylhet, Bangladesh</p>
-									<ul>
-										<li>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>(5)
-										</li>
-									</ul>
-								</div>
-								<div class="feature-hover-effect">
-									<h4>Explore Silong, India</h4>
-									<ul>
-										<li>4 Days 3 Nights</li>
-										<li>Buffet Lunch and Dinner</li>
-										<li>Medical Support</li>
-										<li>Updown with Modern Air</li>
-									</ul>
-									<a href="{{action('SingleTour\InformationController@index')}}">Read More</a>
-								</div>
-							</div>
-						</div>	
-						<div class="col-lg-4 col-md-6  col-sm-12 col-xs-12">
-							<div class="single-feature">
-								<div class="feature-img">
-									<img src="{{asset('public/images/srilanka.jpg')}}" alt="feature" />
-								</div>
-								<div class="feature-content">
-									<span>$250</span>
-									<p>Explore Sylhet, Bangladesh</p>
-									<ul>
-										<li>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>(5)
-										</li>
-									</ul>
-								</div>
-								<div class="feature-hover-effect">
-									<h4>Explore Silong, India</h4>
-									<ul>
-										<li>4 Days 3 Nights</li>
-										<li>Buffet Lunch and Dinner</li>
-										<li>Medical Support</li>
-										<li>Updown with Modern Air</li>
-									</ul>
-									<a href="{{action('SingleTour\InformationController@index')}}">Read More</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6  col-sm-12 col-xs-12">
-							<div class="single-feature">
-								<div class="feature-img">
-									<img src="{{asset('public/images/maxresdefault.jpg')}}" alt="feature" />
-								</div>
-								<div class="feature-content">
-									<span>$250</span>
-									<p>Explore Sylhet, Bangladesh</p>
-									<ul>
-										<li>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>(5)
-										</li>
-									</ul>
-								</div>
-								<div class="feature-hover-effect">
-									<h4>Explore Silong, India</h4>
-									<ul>
-										<li>4 Days 3 Nights</li>
-										<li>Buffet Lunch and Dinner</li>
-										<li>Medical Support</li>
-										<li>Updown with Modern Air</li>
-									</ul>
-									<a href="{{action('SingleTour\InformationController@index')}}">Read More</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6  col-sm-12 col-xs-12">
-							<div class="single-feature">
-								<div class="feature-img">
-									<img src="{{asset('public/images/Tasman_Lake.jpg')}}" alt="feature" />
-								</div>
-								<div class="feature-content">
-									<span>$250</span>
-									<p>Explore Sylhet, Bangladesh</p>
-									<ul>
-										<li>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>(5)
-										</li>
-									</ul>
-								</div>
-								<div class="feature-hover-effect">
-									<h4>Explore Silong, India</h4>
-									<ul>
-										<li>4 Days 3 Nights</li>
-										<li>Buffet Lunch and Dinner</li>
-										<li>Medical Support</li>
-										<li>Updown with Modern Air</li>
-									</ul>
-									<a href="{{action('SingleTour\InformationController@index')}}">Read More</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6  col-sm-12 col-xs-12">
-							<div class="single-feature">
-								<div class="feature-img">
-									<img src="{{asset('public/images/Hero_RomeItaly.jpg')}}" alt="feature" />
-								</div>
-								<div class="feature-content">
-									<span>$250</span>
-									<p>Explore Sylhet, Bangladesh</p>
-									<ul>
-										<li>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>(5)
-										</li>
-									</ul>
-								</div>
-								<div class="feature-hover-effect">
-									<h4>Explore Silong, India</h4>
-									<ul>
-										<li>4 Days 3 Nights</li>
-										<li>Buffet Lunch and Dinner</li>
-										<li>Medical Support</li>
-										<li>Updown with Modern Air</li>
-									</ul>
-									<a href="{{action('SingleTour\InformationController@index')}}">Read More</a>
-								</div>
-							</div>
-						</div>
+						@endforeach
+						
 					</div>
 				</div>
 				<div class="col-lg-12  col-md-12  col-sm-12 col-xs-12 text-center">
@@ -291,16 +144,18 @@ Home
 					</div>
 				</div>
 				<div class="row">
+					 @foreach($country as $row)
 					<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
 						<div class="single-destination">
 							<div class="destination-img">
-								<img src="{{asset('public/images/australia.jpg')}}" alt="destination" />
+								<img src="{{asset('public/uploads/Country/'.$row->country_img)}}" alt="destination" />
 							</div>
-							<h3>Australia</h3>
+							<h3>{{$row->country_name}}</h3>
 							<span>3 Tours</span>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+					 @endforeach
+					<!--<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
 						<div class="single-destination">
 							<div class="destination-img">
 								<img src="{{asset('public/images/Canada.jpg')}}" alt="destination" />
@@ -326,7 +181,7 @@ Home
 							<h3>Thailand</h3>
 							<span>3 Tours</span>
 						</div>
-					</div> 
+					</div> -->
 				</div>
 			</div>
 		</section>

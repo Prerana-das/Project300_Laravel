@@ -1,6 +1,7 @@
 @extends('layouts/master')
 @section('title')
-Info
+	Info
+
 @endsection
 	
 @section('content')
@@ -22,7 +23,6 @@ Info
 						<div class="tour-menu">
 							<ul>
 								<li><a href="{{action('SingleTour\InformationController@index')}}"><i class="fas fa-file-alt"></i>INFORMATION</a></li>
-
 								<li><a href="{{action('SingleTour\TourPlanController@index')}}"><i class="fas fa-clipboard-list"></i>TOUR PLAN</a></li>
 
 								<li><a href="{{action('SingleTour\TourMapController@index')}}"><i class="fas fa-map-marker-alt"></i>LOCATION</a></li>
@@ -88,10 +88,12 @@ Info
 											<li>Exclude</li>
 										</ul>
 										<ul class="info-right">
+											@foreach($tour as $row)
+
 											<li>Las Vegas, USA</li>
-											<li>Osmani International Airport, Sylhet, Bangladesh</li>
-											<li>Approximately 10.20 AM, 19 November</li>
-											<li>Approximately 6.45 PM, 25 November</li>
+											<li>{{$row->start_place}}</li>
+											<li>{{$row->start_time}}</li>
+											<li>{{$row->return_time}}</li>
 											<li>
 												<ul>
 													<li><i class="far fa-check-circle"></i> Airfares</li>
@@ -112,6 +114,7 @@ Info
 													<li></li>
 												</ul>
 											</li>
+											@endforeach
 										</ul>
 									</div>
 								</div>	

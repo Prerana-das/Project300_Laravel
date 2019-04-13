@@ -16,6 +16,7 @@ Country
 								<tr>
 								  <th scope="col">#</th>
 								  <th scope="col">Country Name</th>
+								  <th scope="col">Country Image</th>
 								  <th scope="col">Country Region</th>
 								  <th scope="col">Details</th>
 								  <th scope="col">Action</th>
@@ -26,6 +27,7 @@ Country
 								<tr>
 								  <th scope="row">{{$row->countryID}}</th>
 								  <td>{{$row->country_name}}</td>
+								  <td><img style="width: 60px; height: 40px" src="{{asset('public/uploads/Country/'.$row->country_img)}}"></td>
 								  <td>{{$row->country_region}}</td>
 								  <td>{{$row->other_details}}<br/></td>
 								  <td>
