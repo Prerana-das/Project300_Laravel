@@ -14,20 +14,28 @@ Booking List
 						  <thead>
 							<tr>
 							  <th scope="col">#</th>
+							  <th scope="col">Name </th>
+							   <th scope="col">Email </th>
+							    <th scope="col">Phone </th>
 							  <th scope="col">No of Person</th> 	
 							  <th scope="col">Special Request </th>
-							  <th scope="col">Date </th>
+							   <th scope="col">Date </th>
 							  <th scope="col">Action</th>
 							</tr>
 						  </thead>
 						  <tbody>
+						  	 @foreach($table as $row)
 							<tr>
-							  <th scope="row">1</th>
-							  <td>Mark</td>
-							  <td>Mark</td>
-							  <td>Mark</td>
+							  <th scope="row">{{$row->bookID}}</th>
+							  <td>{{$row->name}}</td>
+							  <td>{{$row->email}}</td>
+							  <td>{{$row->phone}}</td>
+							  <td>{{$row->no_of_person}}</td>
+							  <td>{{$row->request}}</td>
+							   <td>{{$row->created_at}}</td>
 							  <td><a href=""><i class="fas fa-edit"></i></a><a href=""><i class="far fa-trash-alt"></i></a></td>
 							</tr>
+							 @endforeach
 						  </tbody>
 						</table>
 					</div>

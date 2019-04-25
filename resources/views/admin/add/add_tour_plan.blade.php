@@ -22,6 +22,8 @@
                                 @endforeach
                             </select>
 
+                            <label>Plan Title</label>
+                            <input type="text" id="" name="plan_title" placeholder=""><br/>
 
                             <label>Description</label>
                             <input type="text" id="" name="description" placeholder=""><br/>

@@ -21,6 +21,7 @@ class CreateTourPlansTable extends Migration
             $table->unsignedBigInteger('userID')->index()->nullable();
             $table->foreign('userID')->references('id')->on('users')->onDelete('cascade')->onUpdate('No Action');
 
+            $table->string('plan_title');
             $table->text('description');
             $table->string('others_details');
             $table->timestamps();

@@ -14,7 +14,8 @@ Tour Plan
 							<table class="table table-bordered">
 							  <thead>
 								<tr>
-								  <th scope="col">#</th>	 	
+								  <th scope="col">#</th>
+								  <th scope="col">Plan Title</th>	 	
 								  <th scope="col">Description</th>
 								  <th scope="col">Others Details</th>
 								  <th scope="col">Action</th>
@@ -24,6 +25,7 @@ Tour Plan
 								  	@foreach($table as $row)
 								<tr>
 								  <th scope="row">{{$row->plan_ID}}</th>
+								  <td>{{$row->plan_title}}</td>
 								  <td>{{$row->description}}</td>
 								  <td>{{$row->others_details}}</td>
 								  <td>

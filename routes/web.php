@@ -83,6 +83,9 @@ Route::get('tourPlan/add', 'Admin\TourPlanController@add_TourPlan');
 Route::post('tourPlan/save', 'Admin\TourPlanController@save');
 
 Route::get('booking/view', 'Admin\BookingController@index');
+Route::post('booking', 'BookingController@save');
+
+
 Route::get('user/view', 'Admin\UserListController@index');
 
 //Single Tour
@@ -98,4 +101,4 @@ Route::get('review','SingleTour\TourReviewController@index');
 Auth::routes();
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('index');

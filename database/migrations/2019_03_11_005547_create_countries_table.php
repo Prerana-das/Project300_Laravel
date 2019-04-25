@@ -18,7 +18,7 @@ class CreateCountriesTable extends Migration
             $table->unsignedBigInteger('userID')->index()->nullable();
             $table->foreign('userID')->references('id')->on('users')->onDelete('cascade')->onUpdate('No Action');
             $table->string('country_name');
-            $table->string('country_img');
+            $table->string('country_img')->nullable();
             $table->string('country_region');
              $table->string('other_details');
             $table->timestamps();

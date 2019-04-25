@@ -32,7 +32,7 @@ Country
 								  <td>{{$row->other_details}}<br/></td>
 								  <td>
 								  	<a href="{{action('Admin\CountryController@edit_country', ['id' => $row->countryID])}}"><i class="fas fa-edit"></i></a>
-								  	<a href="{{action('Admin\CountryController@del', ['id' => $row->countryID])}}">
+								  	<a href="{{action('Admin\CountryController@del', ['id' => $row->countryID])}}" onclick="return confirm('Are you sure to delete?')" title="Delete">
 								  		<i class="far fa-trash-alt"></i></a></td>
 								</tr>
 								 @endforeach

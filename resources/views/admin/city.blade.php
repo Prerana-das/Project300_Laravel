@@ -30,7 +30,7 @@ City
 								  <td>{{$row->other_details}}</td>
 								  <td>
 								  	<a href="{{action('Admin\CityController@edit_city', ['id' => $row->cityID])}}"><i class="fas fa-edit"></i></a>
-								  	<a href="{{action('Admin\CityController@del', ['id' => $row->cityID])}}">
+								  	<a href="{{action('Admin\CityController@del', ['id' => $row->cityID])}}" onclick="return confirm('Are you sure to delete?')" title="Delete">
 								  		<i class="far fa-trash-alt"></i></a></td>
 								</tr>
 								 @endforeach

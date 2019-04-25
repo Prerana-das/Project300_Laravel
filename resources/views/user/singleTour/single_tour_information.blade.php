@@ -28,7 +28,7 @@
 								<li><a href="{{action('SingleTour\TourMapController@index')}}"><i class="fas fa-map-marker-alt"></i>LOCATION</a></li>
 
 								<li><a href="{{action('SingleTour\TourGalleryController@index')}}"><i class="fas fa-camera"></i>GALLERY</a></li>
-								
+
 								<li><a href="{{action('SingleTour\TourReviewController@index')}}"><i class="far fa-thumbs-up"></i>REVIEWS</a></li>
 							</ul>
 						</div>
@@ -59,8 +59,10 @@
 						<div class="information">
 							<div class="row">
 								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									@foreach($tour as $row)
 									<div class="info-title">
-										<h1>Las Vegas</h1>
+										
+										<h1>{{$row->tour_name}}</h1>
 										<h6>$1075 <span>/ Per person<span></h6>
 										<ul>
 											<li>
@@ -72,8 +74,10 @@
 											</li>
 											<li>( 4 Review )</li>
 										</ul>
-										<p>This don't them the in carried musical control should before on made world up frequencies the and of he it and screen. Was to were the found be problem self-interest, team- history the same military to the someone our outside now, live first of out pass missions please got found for a population coffee you crap ensure beings up the too a about queen only on volumes higher studies found as to a pushed thought. Your there way.</p>
+										<p>{{$row->other_details}}</p>
+										
 									</div>
+									@endforeach
 								</div>
 							</div>
 							<div class="row">
@@ -87,15 +91,16 @@
 											<li>Included</li>
 											<li>Exclude</li>
 										</ul>
+										@foreach($tour as $row->tourID)
 										<ul class="info-right">
-											@foreach($tour as $row)
 
-											<li>Las Vegas, USA</li>
+											<li>{{$row->tour_name}}</li>
 											<li>{{$row->start_place}}</li>
 											<li>{{$row->start_time}}</li>
 											<li>{{$row->return_time}}</li>
 											<li>
 												<ul>
+
 													<li><i class="far fa-check-circle"></i> Airfares</li>
 													<li><i class="far fa-check-circle"></i> Tour Guide</li>
 												</ul>
@@ -114,8 +119,9 @@
 													<li></li>
 												</ul>
 											</li>
-											@endforeach
+											
 										</ul>
+										@endforeach
 									</div>
 								</div>	
 							</div>	
@@ -138,13 +144,14 @@
 						<div class="single-tour-sidebar">
 							<div class="post-request">
 								<h4>Book a tour Now!</h4>
-								<form action="">
-									<input type="name" placeholder="&#xf007;  Name" />
-									<input type="email" placeholder="&#xf0e0;  Email" />
-									<input type="name" placeholder="&#xf095;  Phone number" />
-									<input type="name" placeholder="&#xf073;  15/11/2018" />
-									<input type="name" placeholder="&#xf0c0;  Number of person" />
-									<input type="name" placeholder="&#xf171;  Special Request" />
+								<form  method="POST" action="{{action('BookingController@save')}}">
+									 {{ csrf_field() }}
+									
+									<input type="name" placeholder="&#xf007;  Name" name="name" />
+									<input type="email" placeholder="&#xf0e0; Email"  name="email" />
+									<input type="text" placeholder="&#xf095;  Phone number"  name="phone" />
+									<input type="text" name="no_of_person" placeholder="&#xf0c0;  Number of person" />
+									<input type="text" name="requestval" placeholder="&#xf171;  Special Request" />
 									<input type="submit" value="submit"/>
 								</form>
 							</div>

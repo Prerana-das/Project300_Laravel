@@ -17,7 +17,10 @@ class CreateBookingsTable extends Migration
             $table->bigIncrements('bookID');
             $table->unsignedBigInteger('userID')->index()->nullable();
             $table->foreign('userID')->references('id')->on('users')->onDelete('cascade')->onUpdate('No Action');
-            $table->binary('no_of_person');
+            $table->string('name');
+            $table->string('email');
+            $table->string('phone');
+            $table->string('no_of_person');
             $table->string('request');
             $table->timestamps();
         });

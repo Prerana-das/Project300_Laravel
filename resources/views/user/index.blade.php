@@ -19,7 +19,7 @@ Home
 									</div>
 								</div>
 								<div class="col-lg-4 col-md-5 col-sm-12 col-xs-12">
-									<div class="promo-links">
+									<div class="promo-links" style="visibility: hidden">
 										<h4>Find your tour now!</h4>
 										<form action="">
 											<input type="text" placeholder="Find your tour now!" />

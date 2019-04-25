@@ -16,18 +16,20 @@ User List
 								  <th scope="col">#</th>
 								  <th scope="col">User Name</th>
 								  <th scope="col">Email</th>
-								  <th scope="col">Password</th>
+								  <th scope="col">User Type</th>
 								  <th scope="col">Action</th>
 								</tr>
 							  </thead>
 							  <tbody>
+							  	 @foreach($table as $row)
 								<tr>
-								  <th scope="row">1</th>
-								  <td>Mark</td>
-								  <td>Mark</td>
-								  <td>Mark</td>
+								  <th scope="row">{{$row->id}}</th>
+								  <td>{{$row->name}}</td>
+								  <td>{{$row->email}}</td>
+								  <td>{{$row->userType}}</td>
 								  <td><a href=""><i class="fas fa-edit"></i></a><a href=""><i class="far fa-trash-alt"></i></a></td>
 								</tr>
+								@endforeach
 							  </tbody>
 							</table>
 						</div>

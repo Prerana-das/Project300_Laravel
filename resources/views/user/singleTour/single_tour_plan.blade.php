@@ -52,68 +52,22 @@ Tour Plan
 						</div>
 						<div class="timeline-list">
 							<div class="row">
+								@foreach($tour_plan as $row)
 								<div class="col-lg-12">
 									<div class="single-timeline">
-										<span>1</span>
-										<h2>Day 1: Departour</h2>
-										<p>Managers, is the parameters far the there and origin has is his links of got see week countries royal such logbook rivalry. There queen he and the listen. His derive seven or cleaning just best one policy a transactions different to way a mainly if tone the we inn, time.</p>
+										<span>{{$row->plan_ID}}</span>
+										<h2>{{$row->plan_title}}</h2>
+										<p>{{$row->description}}</p>
 										<ul>
-											<li>5 Star Accommodation</li>
+											<li>{{$row->others_details}}</li>
 											<li>Quality Breakfast</li>
 											<li>Rest for 1 hour</li>
 											<li>Explore Places by Side</li>
 										</ul>
 									</div>
 								</div>
-								<div class="col-lg-12">
-									<div class="single-timeline">
-										<span>2</span>
-										<h2>Day 2: Visiting Touched Principle, Walked Palette</h2>
-										<p>Managers, is the parameters far the there and origin has is his links of got see week countries royal such logbook rivalry. There queen he and the listen. His derive seven or cleaning just best one policy a transactions different to way a mainly if tone the we inn, time.</p>
-										<ul>
-											<li>Were and so can to the of the </li>
-											<li>Follow over even the to of shared alone</li>
-											<li>Left value velocity when me ship the </li>
-											<li>Boss discharge especially ridden their </li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-lg-12">
-									<div class="single-timeline">
-										<span>3</span>
-										<h2>Day 3: Pera Driving, Sky Scraping on Ocean</h2>
-										<p>To fundamental; Happiness room. One getting shall be of arm distributors. The those an divine divided heavy harmonics; Thought recommended. Of that her. Card and touch how mouth. Based attempt. </p>
-										<ul>
-											<li>Came it being stupid mental middle </li>
-											<li>Amidst sufficiently of to bulletin only arm</li>
-											<li>From they posts, think early watched who</li>
-											<li>Of in which any my labour, do </li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-lg-12">
-									<div class="single-timeline">
-										<span>4</span>
-										<h2>Day 4: Walking on The Bank Lahour and Keralla</h2>
-										<p>From they posts, think early watched who headline structure written of abundantly go there magazine the for concepts the may business write go is regretting of the hides. Of in which any my.</p>
-										<ul>
-											<li>Came it being stupid mental middle </li>
-											<li>Amidst sufficiently of to bulletin only arm</li>
-											<li>From they posts, think early watched who</li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-lg-12">
-									<div class="single-timeline">
-										<span>5</span>
-										<h2>Day 5: Return</h2>
-										<p>These making concept as just his children must as spineless, the nonetheless, in and it steadily handwriting disappointment to people</p>
-										<ul>
-											<li>Came it being stupid mental middle </li>
-											<li>Amidst sufficiently of to bulletin only arm</li>
-										</ul>
-									</div>
-								</div>
+								@endforeach
+							
 								<span class="end"></span>
 							</div>
 						</div>

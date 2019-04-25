@@ -28,7 +28,7 @@ Category
 								  <td>{{$row->created_at}}</td>
 								  <td>
 								  	<a href="{{action('Admin\CategoryController@edit_category', ['id' => $row->categoryID])}}"><i class="fas fa-edit"></i></a>
-								  	<a href="{{action('Admin\CategoryController@del', ['id' => $row->categoryID])}}">
+								  	<a href="{{action('Admin\CategoryController@del', ['id' => $row->categoryID])}}" onclick="return confirm('Are you sure to delete?')" title="Delete">
 								  		<i class="far fa-trash-alt"></i></a></td>
 								</tr>
 								 @endforeach

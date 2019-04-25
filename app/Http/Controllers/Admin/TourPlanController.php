@@ -27,6 +27,7 @@ class TourPlanController extends Controller
     public function save(Request $request){
         $table = new Tour_plan();
         $table->tour_ID = $request->tour_ID;
+        $table->plan_title = $request->plan_title;
         $table->description = $request->description;
         $table->others_details = $request->others_details;
 

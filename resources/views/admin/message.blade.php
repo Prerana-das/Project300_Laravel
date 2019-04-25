@@ -30,7 +30,7 @@ Messages
 								  <td>{{$row->description}}</td>
 								  <td>{{$row->created_at}}</td>
 								  <td>
-								  	<a href="{{action('Admin\MessageController@del', ['id' => $row->messageID])}}">
+								  	<a href="{{action('Admin\MessageController@del', ['id' => $row->messageID])}}" onclick="return confirm('Are you sure to delete?')" title="Delete">
 								  		<i class="far fa-trash-alt"></i></a></td>
 								</tr>
 								 @endforeach
