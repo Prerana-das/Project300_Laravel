@@ -74,7 +74,7 @@
 											</li>
 											<li>( 4 Review )</li>
 										</ul>
-										<p>{{$row->other_details}}</p>
+										<p></p>
 										
 									</div>
 									@endforeach
@@ -91,7 +91,7 @@
 											<li>Included</li>
 											<li>Exclude</li>
 										</ul>
-										@foreach($tour as $row->tourID)
+										@foreach($tour as $row)
 										<ul class="info-right">
 
 											<li>{{$row->tour_name}}</li>
@@ -147,6 +147,7 @@
 								<form  method="POST" action="{{action('BookingController@save')}}">
 									 {{ csrf_field() }}
 									
+									<input type="hidden" placeholder="" name="tour_ID" />
 									<input type="name" placeholder="&#xf007;  Name" name="name" />
 									<input type="email" placeholder="&#xf0e0; Email"  name="email" />
 									<input type="text" placeholder="&#xf095;  Phone number"  name="phone" />

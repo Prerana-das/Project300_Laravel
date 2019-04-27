@@ -21,6 +21,7 @@ Booking List
 							  <th scope="col">Special Request </th>
 							   <th scope="col">Date </th>
 							  <th scope="col">Action</th>
+							   <th scope="col">tour name</th>
 							</tr>
 						  </thead>
 						  <tbody>
@@ -34,8 +35,12 @@ Booking List
 							  <td>{{$row->request}}</td>
 							   <td>{{$row->created_at}}</td>
 							  <td><a href=""><i class="fas fa-edit"></i></a><a href=""><i class="far fa-trash-alt"></i></a></td>
+							  <td> @foreach($tour as $row)
+                                <p>{{$row->tour_name}}</p>
+                                @endforeach</td>
 							</tr>
 							 @endforeach
+							 
 						  </tbody>
 						</table>
 					</div>

@@ -15,6 +15,10 @@ class CreateBookingsTable extends Migration
     {
         Schema::create('bookings', function (Blueprint $table) {
             $table->bigIncrements('bookID');
+
+            $table->unsignedBigInteger('tour_ID')->index()->nullable();
+            $table->foreign('tour_ID')->references('tour_ID')->on('tours')->onDelete('cascade')->onUpdate('No Action');
+            
             $table->unsignedBigInteger('userID')->index()->nullable();
             $table->foreign('userID')->references('id')->on('users')->onDelete('cascade')->onUpdate('No Action');
             $table->string('name');

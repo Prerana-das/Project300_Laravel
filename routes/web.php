@@ -19,12 +19,6 @@ Route::get('tour','TourController@tour_view');
 //===============================Destination
 Route::get('destination','DestinationController@destination_view');
 
-//===============================Single_tour_information
-//Route::get('single_tour_information',InformationController@sinformation_view');
-
-//===============================Single Tour Gallery
-//Route::get('single_tour_gellery','GelleryController@gellery_view');
-
 //===============================Faq
 Route::get('faq','FaqController@faq_view');
 
@@ -38,10 +32,23 @@ Route::get('blog','BlogController@blog_view');
 Route::get('contact/view','ContactController@contact_view');
 Route::post('contact', 'ContactController@save');
 
-//===============================Admin
-Route::get('admin','AdminController@admin_view');
+//Single Tour
+Route::get('information/','SingleTour\InformationController@index');
+Route::get('plan','SingleTour\TourPlanController@index');
+Route::get('map','SingleTour\TourMapController@index');
+Route::get('single/gallery','SingleTour\TourGalleryController@index');
+Route::get('review','SingleTour\TourReviewController@index');
 
-//Route::get('category','CategoryController@category_view');
+
+
+//===============================Admin======
+
+Route::group(['middleware' => 'auth'], function () {
+//================ /Admin ===================
+
+Route::group(['middleware' => ['admin']], function () {
+
+Route::get('admin','AdminController@admin_view');
 
 //Route::get('message','MessageController@message_view');
 Route::get('message/view', 'Admin\MessageController@index');
@@ -88,12 +95,9 @@ Route::post('booking', 'BookingController@save');
 
 Route::get('user/view', 'Admin\UserListController@index');
 
-//Single Tour
-Route::get('information','SingleTour\InformationController@index');
-Route::get('plan','SingleTour\TourPlanController@index');
-Route::get('map','SingleTour\TourMapController@index');
-Route::get('single/gallery','SingleTour\TourGalleryController@index');
-Route::get('review','SingleTour\TourReviewController@index');
+  });
+});
+
 
 
 

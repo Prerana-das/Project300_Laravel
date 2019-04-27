@@ -100,7 +100,7 @@ Home
 										<li>Medical Support</li>
 										<li>Updown with Modern Air</li>-->
 									</ul>
-									<a href="{{action('SingleTour\InformationController@index')}}">Read More</a>
+									<a href="{{action('SingleTour\InformationController@index',['id' => $row->tour_ID])}}">Read More</a>
 								</div>
 							</div>
 						</div>	

@@ -8,5 +8,5 @@ class Booking extends Model
 {
     protected $table = 'bookings';
     protected $primaryKey = 'bookID';
-    protected $fillable = ['userID','name','email','phone','date','no_of_person','request'];
+    protected $fillable = ['tour_ID','userID','name','email','phone','date','no_of_person','request'];
 }
